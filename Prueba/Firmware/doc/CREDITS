@@ -1,0 +1,101 @@
+/** \page CREDITS Credits
+ **
+ ** Authors and their contributions to CIAA Firmware:
+ **
+ ** CIAA Firmware 0.4.0 (10.04.2015)
+ **
+ **   Following persons have invest a lot of effort and time to make
+ **   CIAA Firmware become true. We hope you enjoy it. :)
+ **
+ **   - Gustavo Muro (gmuro@fceia.unr.edu.ar):
+ **      - Implement Modbus Master
+ **      - Implement utest for Modbus Master
+ **      - Implement utest for Modbus Transport
+ **
+ **   - Juan Cecconi (jcecconi@numetron.com.ar):
+ **      - Initial test implementation of memcmp and memset
+ **
+ **   - Esteban Volentini (evolentini@gmail.com):
+ **      - Implement Block Driver simulation for windows/linux
+ **
+ **   - Alejandro Permingeat (apermingeat@gmail.com):
+ **      - Port of the firmware to CIAA-FLS
+ **
+ **   - Pablo Ridolfi (pridolfi@frba.utn.edu.ar):
+ **      - Port drivers to EDU-CIAA-NXP
+ **
+ **   - Natalia Requejo:
+ **      - Improve OSEK indentation (tabs to spaces)
+ **
+ **   - Mariano Cerdeiro (mcerdeiro@gmail.com):
+ **      - Rework Firmware directory structure
+ **      - Initial implementation of memcmp and memset
+ **      - Add BOARD to makefile
+ **      - Improve templates files
+ **      - Fix some FreeOSEK bugs
+ **      - Improve FreeOSEK generator adding a -D parameter
+ **
+ ** CIAA Firmware 0.3.0 (14.12.2014)
+ **
+ **   Following persons have invest a lot of effort and time to make
+ **   CIAA Firmware become true. We hope you enjoy it. :)
+ **
+ **   - Gustavo Muro (gmuro@fceia.unr.edu.ar):
+ **      - Implement Modbus
+ **      - Testing of Modbus with a HMI interface
+ **
+ **   - Juan Cecconi (jcecconi@numetron.com.ar):
+ **      - Rework of the makefile to support dependencies of header files, also
+ **         obj files are now stored in out/obj
+ **      - Merge of OSEK port for Win/Linux/Mac to be the same one
+ **      - Implementation of the test automation of the OSEK conformance tests
+ **         for CIAA-NXP
+ **
+ **   - Esteban Volentini (evolentini@gmail.com)
+ **      - Simulation of serial driver for Windows/Linux/Mac over TCPIP ports
+ **      - Implementation of serial driver comunication with host ports in x86
+ **
+ **   - Fernando Bazerque
+ **      - Implementation of ADC and DAC Drivers for CIAA-NXP
+ **
+ **   - Pablo Ridolfi (pridolfi@frba.utn.edu.ar):
+ **      - Implement ISR2 for OSEK for the CIAA-NXP
+ **      - Port of OSEK to CIAA-NXP
+ **
+ **   - Gustavo Ramoscelli
+ **      - improve of lcov tooling (coverage for unit tests)
+ **
+ **   - Mariano Cerdeiro (mcerdeiro@gmail.com)
+ **      - Implementation of the test automation of the OSEK conformance tests
+ **         for Linux
+ **      - Implement ISR2 for OSEK
+ **      - Fix for multiple issues on the OSEK
+ **      - Implementation of OSEK conformance tests
+ **
+ ** CIAA Firmware 0.2.0 (8.8.2014)
+ **
+ **   Following persons have invest a lot of effort and time to make
+ **   CIAA Firmware become true. We hope you enjoy it. :)
+ **
+ **   - Pablo Ridolfi (pridolfi@frba.utn.edu.ar):
+ **      - Port of OSEK RTOS to lpc4337
+ **      - Implementation of UART Drivers
+ **      - Implementation of DIO Drivers
+ **
+ **   - Juan Cecconi (jcecconi@numetron.com.ar):
+ **      - Port OpenOCD configuration for lpx4337
+ **      - A lot of debugging of:
+ **         - UART Drivers
+ **         - POSIX Stack
+ **         - RTOS OSEK
+ **
+ **   - Gustavo Muro (gmuro@fceia.unr.edu.ar):
+ **      - Implement Modbus
+ **      - Testing of Modbus with a HMI interface
+ **
+ **   - Mariano Cerdeiro (mcerdeiro@gmail.com):
+ **      - Implementation of OSEK RTOS (reuse of FreeOSEK project)
+ **      - Implementation of POSIX Stack
+ **
+ **/
+

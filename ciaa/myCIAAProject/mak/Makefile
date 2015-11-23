@@ -79,31 +79,24 @@ PROJECT_NAME               = $(lastword $(subst $(DS), , $(PROJECT_PATH)))
 # Defined $(PROJECT_PATH) in makefile.mine
 # source path
 
-#HVM files
-vpath classes.c ..
-vpath icecapvm.c ..
-vpath methodinterpreter.c ..
-vpath methods.c ..
-vpath icecapvm.c ..
-vpath gc.c ..
-vpath natives_allOS.c ..
-vpath allocation_point.c ..
-vpath print.c ..
-vpath armCortexM_interrupt.S $(PROJECT_PATH)$(DS)src
-
 HVM_ASM_FILE = $(PROJECT_PATH)$(DS)src$(DS)armCortexM_interrupt.S
 
 CFLAGS  +=  -DJAVA_HEAP_SIZE=$(JAVA_HEAP_SIZE) -DJAVA_STACK_SIZE=$(JAVA_STACK_SIZE) $(ADDITIONAL_FLAGS)
 
 # source path
 $(PROJECT_NAME)_SRC_PATH  += $(PROJECT_PATH)$(DS)src
-$(PROJECT_NAME)_HVM_SRC_PATH  += $(PROJECT_PATH)$(DS)hvm$(DS)src
+$(PROJECT_NAME)_HVM_SRC_PATH += $(PROJECT_PATH)$(DS)hvm$(DS)src
 
 # include path
 INC_FILES += $(PROJECT_PATH)$(DS)inc $(PROJECT_PATH)$(DS)hvm$(DS)inc
 
 # library source files
-SRC_FILES += $(wildcard $($(PROJECT_NAME)_HVM_SRC_PATH)$(DS)*.c) $(HVM_ASM_FILE) $(wildcard $($(PROJECT_NAME)_SRC_PATH)$(DS)*.c) 
+SRC_FILES += $(HVM_ASM_FILE) \
+				 $(wildcard $($(PROJECT_NAME)_SRC_PATH)$(DS)*.c) \
+				 $(wildcard $($(PROJECT_NAME)_HVM_SRC_PATH)$(DS)*.c)
+
+vpath %.S $($(PROJECT_NAME)_SRC_PATH)
+vpath %.c $($(PROJECT_NAME)_HVM_SRC_PATH)
 
 # Modules needed for this example
 MODS ?=  externals$(DS)drivers_board

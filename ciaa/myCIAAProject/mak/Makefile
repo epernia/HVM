@@ -92,8 +92,8 @@ INC_FILES += $(PROJECT_PATH)$(DS)inc $(PROJECT_PATH)$(DS)hvm$(DS)inc
 
 # library source files
 SRC_FILES += $(HVM_ASM_FILE) \
-				 $(wildcard $($(PROJECT_NAME)_SRC_PATH)$(DS)*.c) \
-				 $(wildcard $($(PROJECT_NAME)_HVM_SRC_PATH)$(DS)*.c)
+             $(wildcard $($(PROJECT_NAME)_SRC_PATH)$(DS)*.c) \
+             $(wildcard $($(PROJECT_NAME)_HVM_SRC_PATH)$(DS)*.c)
 
 vpath %.S $($(PROJECT_NAME)_SRC_PATH)
 vpath %.c $($(PROJECT_NAME)_HVM_SRC_PATH)

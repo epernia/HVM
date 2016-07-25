@@ -1,0 +1,14 @@
+package scjhelloworld;
+
+import javax.safetycritical.Launcher;
+
+public class Main {
+	public static final int LEVEL = 1;
+	public static final long INMORTAL_SIZE = 3500;
+	public static final long MISSION_MEM_SIZE = 1650;
+	public static final long APP_STACK_SIZE = 2048;
+
+	public static void main(String[] args) {
+		new Launcher(new MyApp(), LEVEL);
+	}
+}

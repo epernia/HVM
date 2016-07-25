@@ -1,0 +1,29 @@
+package scjhelloworld;
+
+import javax.realtime.PriorityParameters;
+import javax.safetycritical.MissionSequencer;
+import javax.safetycritical.StorageParameters;
+import javax.scj.util.Priorities;
+
+public class MySequencer extends MissionSequencer<MyMission> {
+
+	private MyMission mission;
+
+	public MySequencer() {
+		
+		super(new PriorityParameters(Priorities.PR95),
+				new StorageParameters(0, null, 2000, 0,
+				Main.MISSION_MEM_SIZE));
+				mission = new MyMission(this);
+		}
+
+	@Override
+	protected MyMission getNextMission() {
+		if (mission.terminationPending()) {
+			return null;
+		} else {
+			return mission;
+		}
+	}
+
+}

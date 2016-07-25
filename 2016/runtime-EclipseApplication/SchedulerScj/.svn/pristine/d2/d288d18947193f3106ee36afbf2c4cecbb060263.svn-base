@@ -1,0 +1,38 @@
+package scjhelloworld;
+
+import javax.realtime.PeriodicParameters;
+import javax.realtime.PriorityParameters;
+import javax.safetycritical.PeriodicEventHandler;
+import javax.safetycritical.StorageParameters;
+
+public class MyPeriodicEvh extends PeriodicEventHandler {
+
+	private static final long APP_STACK_SIZE = 0;
+	int count = 0;
+	private MySequencer missSeq;
+	private MyMission myMission;
+
+	protected MyPeriodicEvh(PriorityParameters priority,
+			PeriodicParameters periodic, MySequencer missSeq, MyMission myMission) {
+
+		super(priority, periodic, new StorageParameters(0,
+				new long[] { APP_STACK_SIZE }, 0, 0, 0));
+		
+		this.missSeq = missSeq;
+		this.myMission = myMission;
+	}
+
+	public void handleAsyncEvent() {
+		
+		if (count % 2 == 0) {
+			myMission.on();
+		} else {
+			myMission.off();
+		}
+		count++;
+		if (count == 5) {
+			missSeq.requestSequenceTermination();
+		}
+	}
+
+}

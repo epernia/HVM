@@ -1,0 +1,37 @@
+package scjhelloworld;
+
+import javax.realtime.Clock;
+import javax.realtime.PeriodicParameters;
+import javax.realtime.PriorityParameters;
+import javax.realtime.RelativeTime;
+import javax.safetycritical.Mission;
+import javax.safetycritical.PeriodicEventHandler;
+import javax.scj.util.Priorities;
+
+public class MyMission extends Mission{
+
+	
+	private MySequencer sequencer;
+
+	public MyMission(MySequencer sequencer) {
+		this.sequencer = sequencer;
+	}
+	
+	public void initialize() {
+		PeriodicEventHandler pevh1 = new MyPeriodicEvh(
+				new PriorityParameters(Priorities.PR97),
+				new PeriodicParameters(null, new RelativeTime(1000, 0,
+				Clock.getRealtimeClock())), sequencer, this);
+				pevh1.register();
+	}
+
+	@Override
+	public long missionMemorySize() {
+		return Main.MISSION_MEM_SIZE;
+	}
+
+	public native void on();
+
+	public native void off();
+
+}

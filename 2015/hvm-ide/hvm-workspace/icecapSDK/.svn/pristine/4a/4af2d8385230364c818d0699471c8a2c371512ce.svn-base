@@ -1,0 +1,22 @@
+/ASCIIConverter.java/1.2/Thu Jan 31 08:49:35 2013//
+/Aircraft.java/1.2/Thu Jan 31 09:14:09 2013//
+/Benchmarker.java/1.2/Thu Jan 31 08:50:17 2013//
+/CallSign.java/1.1/Wed Jul  4 09:16:45 2012//
+/Collision.java/1.2/Thu Jan 31 08:49:35 2013//
+/CollisionCollector.java/1.1/Wed Jul  4 09:16:45 2012//
+/CollisionDetectorHandler.java/1.5/Tue Sep 16 10:39:18 2014//
+/Constants.java/1.1/Wed Jul  4 09:16:45 2012//
+/FrameBuffer.java/1.1/Wed Jul  4 09:16:45 2012//
+/ImmortalEntry.java/1.1/Wed Jul  4 09:16:45 2012//
+/Level0Safelet.java/1.3/Thu Jan  2 11:31:19 2014//
+/Motion.java/1.1/Wed Jul  4 09:16:44 2012//
+/NoiseGenerator.java/1.1/Wed Jul  4 09:16:45 2012//
+/RawFrame.java/1.1/Wed Jul  4 09:16:45 2012//
+/Reducer.java/1.1/Wed Jul  4 09:16:45 2012//
+/StateTable.java/1.3/Thu Jan  2 11:31:19 2014//
+/TransientDetectorScopeEntry.java/1.5/Fri Mar 14 13:11:47 2014//
+/Vector2d.java/1.1/Wed Jul  4 09:16:45 2012//
+/VectorConstants.java/1.1/Wed Jul  4 09:16:45 2012//
+/VectorMath.java/1.1/Wed Jul  4 09:16:45 2012//
+/ZeroVectorException.java/1.1/Wed Jul  4 09:16:45 2012//
+D

@@ -1,0 +1,13 @@
+source.. = src/
+output.. = bin/
+bin.includes = META-INF/,\
+               .,\
+               plugin.xml,\
+               lib/bcel-6.0.jar,\
+               resources/
+additional.bundles = org.eclipse.jface.databinding,\
+                     org.eclipse.jface,\
+                     org.eclipse.core.databinding,\
+                     org.eclipse.core.databinding.beans,\
+                     org.eclipse.core.databinding.observable,\
+                     org.eclipse.core.databinding.property

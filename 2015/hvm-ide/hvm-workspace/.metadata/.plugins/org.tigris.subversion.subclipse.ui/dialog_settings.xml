@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="142" key="passwordStores.location.y"/>
+	<item value="615" key="passwordStores.size.y"/>
+	<item value="707" key="passwordStores.location.x"/>
+	<item value="571" key="passwordStores.size.x"/>
+	<item value="270" key="passwordStores2.location.y"/>
+	<item value="737" key="passwordStores2.location.x"/>
+	<item value="510" key="passwordStores2.size.x"/>
+	<item value="423" key="passwordStores2.size.y"/>
+	<section name="NewLocationWizard">
+		<list key="ConfigurationWizardMainPage.STORE_URL_ID">
+			<item value="https://xp-dev.com/svn/lgassman"/>
+		</list>
+	</section>
+</section>

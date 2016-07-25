@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="icecaptools.BundleResourceManager">
+      <BundleResourceManager class="hvmforstm32.STMPluginResourceManagerDescriptor">
+      </BundleResourceManager>
+   </extension>
+   <extension point="icecaptools.ProjectResourceManager">
+   	<ProjectResourceManager class="hvmforstm32.STMProjectResourceManagerDescriptor">
+   	</ProjectResourceManager>
+   </extension>
+   <extension
+         point="icecaptools.NativeMethodCodeGenerator">
+      <NativeMethodCodeGenerator
+            class="hvmforstm32.STMNativeMethodGenerator">
+      </NativeMethodCodeGenerator>
+   </extension>
+   <extension
+         point="icecaptools.ArchitectureDependentCodeGenerator">
+      <ArchitectureDependentCodeGenerator
+            class="hvmforstm32.STMOsTypes">
+      </ArchitectureDependentCodeGenerator>
+      <ArchitectureDependentCodeGenerator
+            class="hvmforstm32.makefile.AdditionalSourcesMakeFile">
+      </ArchitectureDependentCodeGenerator>
+      <ArchitectureDependentCodeGenerator
+            class="hvmforstm32.makefile.BurnToolMakeFile">
+      </ArchitectureDependentCodeGenerator>
+      <ArchitectureDependentCodeGenerator
+            class="hvmforstm32.makefile.CompilerFlagMakeFile">
+      </ArchitectureDependentCodeGenerator>
+      <ArchitectureDependentCodeGenerator
+            class="hvmforstm32.makefile.CompilerMakeFile">
+      </ArchitectureDependentCodeGenerator>
+      <ArchitectureDependentCodeGenerator
+            class="hvmforstm32.makefile.LibrariesMakeFile">
+      </ArchitectureDependentCodeGenerator>
+            <ArchitectureDependentCodeGenerator
+            class="hvmforstm32.makefile.ObjectCopyMakeFile">
+      </ArchitectureDependentCodeGenerator>
+            <ArchitectureDependentCodeGenerator
+            class="hvmforstm32.makefile.OutputNameMakefile">
+      </ArchitectureDependentCodeGenerator>
+      
+      
+      
+      
+      
+   </extension>
+	<extension point="org.eclipse.ui.propertyPages">
+		<page
+        class="hvmforarmstm32.ui.HvmForArmCortexMPropertyPage"
+        id="hvmforarmstm32.ui.HvmForArmCortexMPropertyPage"
+        name="HVM for ARM Cortex M"
+        >
+        	<enabledWhen>
+        	<adapt
+               type="org.eclipse.core.resources.IProject">
+        	</adapt>
+        	</enabledWhen>
+      </page>
+    </extension>
+ <extension
+       point="icecaptools.BundleResourceManager">
+    <BundleResourceManager
+          class="hvmforstm32.STMARMPluginResourceManager">
+    </BundleResourceManager>
+ </extension>
+</plugin>

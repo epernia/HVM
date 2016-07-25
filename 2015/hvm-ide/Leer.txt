@@ -1,0 +1,13 @@
+Bajar Eclipse Luna Automotive:
+
+http://www.eclipse.org/downloads/packages/release/Luna/SR2
+
+Iniciar el Ecliose en "hvm-workspace".
+
+Correr con "run as eclipse application".
+
+Acordarse de al crear el proyecto Java para HVM hay que añadir de External Jar el icecapSDK.
+
+Conviene poner la carpeta "hvm_c_output" en el propio proyecto. Al generar con "convert to icecaptools" tocar F5 y se ve la nueva carpeta.
+
+
